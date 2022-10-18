@@ -1,0 +1,60 @@
+@keyframes slidein {
+    from {
+        transform: translateY(10px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideout {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.status-enter {
+    transition: opacity 0.5s ease-out;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.status-enter-active {
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
+
+}
+
+.status-item {
+    position: absolute;
+    text-align: center;
+    color:rgb(162, 162, 162);
+}
+
+.status-exit {
+    transition: opacity 0.5s ease-out;
+    animation-duration: 0.5s;
+    animation-name: slideout;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.status-exit-active {
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    position: absolute;
+}
+
+.errors {
+    color:rgb(245, 71, 71);
+    margin: 20px 0;
+    position: absolute;
+    bottom: 20px;
+}
