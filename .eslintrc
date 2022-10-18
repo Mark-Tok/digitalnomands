@@ -1,8 +1,4 @@
 {
-    "extends": [
-      "react-app",
-      "eslint:recommended"
-    ],
     "rules": {
       "@typescript-eslint/no-unused-vars": "error",
       "no-unused-vars": "warn",
